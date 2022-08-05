@@ -19,6 +19,7 @@
                     <label for="password">Password</label>
                     <span class="helper-text" data-error="Enter password"></span>
                 </div>
+                <input type="hidden" name="_csrf" value="{{csrf}}">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
@@ -40,6 +41,12 @@
                     <label for="confirm">Confirm password</label>
                     <span class="helper-text" data-error="Enter password"></span>
                 </div>
+                <div class="input-field">
+                    <input id="name" name="name" type="text" class="validate" required>
+                    <label for="name">Your name</label>
+                    <span class="helper-text" data-error="Enter name"></span>
+                </div>
+                <input type="hidden" name="_csrf" value="{{csrf}}">
                 <button type="submit" class="btn btn-primary">Register</button>
             </form>
         </div>
